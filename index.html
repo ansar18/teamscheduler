@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Team Scheduler 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="settings">
+        <div class="content">
+
+            <div id="options">
+                <label>Weeks: <input id="week" type="number"></label>
+                <label>Teams: <input id="team" type="number"></label>
+                <label>Courses: <input id="course" type="number"></label>
+                <label>Holes Per Course: <input id="hole" type="number"></label>
+                <label>Start Date: <input id="start_date" type="date"></label><br />
+               <label>Multiple Teams Per Hole on Extra: <input id="multiple_teams_per_hole_if_extra" type="checkbox"></label>
+                <label>Smart Sort: <input id="smart_sort" type="checkbox"></label>
+	<label>Dup Check: <input id="dup_check" type="checkbox"></label>            
+</div>
+            <h1 id="logo"><span>team</span>scheduler</h1>
+        </div>
+    </div>
+    <div id="actions">
+        <div class="content">
+            <div id="tabs">
+                <span id="schedules-tab">Schedules</span>
+                <span id="course_team-tab">Course By Team</span>
+                <span id="hole_team-tab">Hole By Team</span>
+                <span id="team_team-tab">Team vs. Team</span>
+            </div>
+
+            <div id="buttons">
+                <span id="load_data">Load Data</span>
+                <span id="save_data">Save Data</span>
+            </div>
+        </div>
+    </div>
+    <div id="action_info">
+        <div class="content">
+            <div id="load">
+                Paste previously copied saved data in this box to import existing schedule.
+                <br />
+                <textarea></textarea>
+                <br />
+                <span id="import" class="button">Import</span>
+            </div>
+            <div id="save">
+                Copy data in this box and save somewhere save. You can load this data back in later.
+                <textarea></textarea>
+            </div>
+        </div>
+        <div id="bottom_border"></div>
+    </div>
+    <div id="content">
+        <div id="schedules"></div>
+        <div id="course_team"></div>
+        <div id="hole_team"></div>
+        <div id="team_team"></div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <!-- <script src='js/jquery.min.js'></script> -->
+    <script src="js/RoundRobin.min.js"></script>
+    <script src="js/Page.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
